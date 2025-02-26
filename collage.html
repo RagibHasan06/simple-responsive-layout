@@ -39,6 +39,30 @@
             .last{
                 border: 2px solid violet;
             }
+
+            /* For Small Device */
+            @media screen and (max-width: 576px) {
+                .row{
+                    flex-direction: column;
+                    height: auto;
+                }
+                .collage-box{
+                    grid-template-columns: 1fr;
+                } 
+            }
+
+            /* For Medium Device */
+
+            @media screen and (min-width: 576px) and (max-width: 992px) {
+                
+                .row{
+                    flex-direction: column;
+                    height: auto;
+                }
+                .collage-box{
+                    grid-template-columns: 2fr;
+                } 
+            }
     </style>
 </head>
 <body class="body">
