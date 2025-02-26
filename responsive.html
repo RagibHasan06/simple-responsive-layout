@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <style>
+        .content{
+            font-size: 2em;}
+        .content h2{
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+            display: flex;
+            
+        }
+        .container img{
+            width: 100%;
+        }
+        .container div{
+            width: 50%;
+        }
+        @media screen and (max-width: 576px) {
+            .container{
+                flex-direction: column;
+            }
+            .container div {
+                width: 100%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h2>My Simple Responsive Website</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex illum sapiente eum necessitatibus voluptas in? Rerum ratione nemo blanditiis impedit quidem laboriosam explicabo ab soluta repellat, commodi id tempore dicta?</p>
+    </div>
+    <div class="container">
+        <div>
+            <img src="images/tiger.jpeg" alt="">
+        </div>
+        <div>
+            <img src="images/lion.webp" alt="">
+        </div>
+    </div>
+</body>
+</html>
